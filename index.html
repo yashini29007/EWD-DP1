@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .profile {
+      text-align: center;
+    }
+
+    h2 {
+      color: #007BFF;
+      border-bottom: 2px solid #007BFF;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .skills span {
+      display: inline-block;
+      background: #007BFF;
+      color: white;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    button {
+      background: #007BFF;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Student Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="profile">
+    
+    <p>Hello! I am a passionate student learning web development. This is my portfolio where I showcase my skills and projects.</p>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>C Programming</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>📘 Student Registration Form</li>
+      <li>🎬 Video & Audio Player</li>
+      <li>📄 ID Card Generator</li>
+      <li>🌐 Personal Portfolio Website</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: yashini@example.com</p>
+    <p>Phone: +91 9876543210</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="msg"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Yashini | Student Portfolio</p>
+  </footer>
+  <!-- JAVASCRIPT -->
+  <script>
+    function showMessage() {
+      document.getElementById("msg").innerHTML = "✨ Thank you for visiting my portfolio!";
+    }
+  </script>
+
+</body>
+</html>
